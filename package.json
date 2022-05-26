@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "start:windows": "nodemon --watch ./**/*.ts --exec \"npm run build && node\"  ./build/index.js",
+    "start": "npm run start:windows",
+    "dev": "nodemon --watch ./**/*.ts --exec \"npm run build && node --inspect \"  ./build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  }
+}

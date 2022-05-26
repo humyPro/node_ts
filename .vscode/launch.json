@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug",
+            "type": "node",
+            "request": "launch",
+            "program": "",
+            "args": [
+                "--loader",
+                "ts-node/esm",
+                "./src/index.ts"
+            ],
+            "cwd": "${workspaceRoot}"
+        }
+    ]
+}
